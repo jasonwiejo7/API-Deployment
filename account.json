@@ -2,7 +2,8 @@
     "user": [
         {
             "username": "jason",
-            "password": "$2b$12$OM//FmmYsXclhiB3ST10TOcYTn7II4yRzC3cHXyIQogXeySbC4vJm",
+            "email": "jasonwiejo@gmail.com",
+            "password": "$2b$12$6oFeIjOt/sNX.u.FFFeneOF.FQk.i..yAcmn8Yn/4HWuuRYkK.sHK",
             "saldo": 0,
             "produk": ""
         }

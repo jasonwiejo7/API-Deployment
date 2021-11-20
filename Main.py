@@ -12,13 +12,13 @@ with open("account.json", "r") as readUser:
 app = FastAPI()
 
 @app.post("/user/sign-up", tags = ['User'])
-async def register(username: str, password: str):
+async def register(username: str, email : str, password: str):
     for list_user in daftarUser['user']:
         if list_user['username'] == username:
             return ({'Message' : "Username sudah digunakan!"})
         else :
             hashpassword = get_password_hash(password)
-            newuser = {'username': username, 'password': hashpassword, 'saldo': 0, 'produk': ""}
+            newuser = {'username': username, 'email': email, 'password': hashpassword, 'saldo': 0, 'produk': ""}
             daftarUser['user'].append(newuser)
             with open("account.json", "w") as writeUser:
                 json.dump(daftarUser, writeUser, indent = 4)
@@ -26,14 +26,14 @@ async def register(username: str, password: str):
             return ({'Message' : "User berhasil di-tambahkan."})
  
 @app.post("/user/login", tags = ['User'])
-async def login(username: str, password: str):
+async def login(email: str, password: str):
     for list_user in daftarUser['user']:
-        if list_user['username'] == username:
+        if list_user['email'] == email:
             if verify_password(password, list_user['password']):
-                return signJWT(username)
+                return signJWT(email)
             else:
                 return ({'Message' : "Password yang dimasukkan salah."})
-    return ({'Message' : "User tidak ditemukan."})
+    return ({'Message' : "Email tidak ditemukan."})
 
 @app.put("/user/top-up", dependencies=[Depends(JWTBearer())], tags = ['Saldo'])
 async def isi_saldo(password: str, Saldo: int):
