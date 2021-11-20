@@ -1,0 +1,60 @@
+{
+    "tryout": [
+        {
+            "id_tryout" : 1,
+            "nama" : "Tryout Biologi Kelas 12 SMA",
+            "kuota" : 100,
+            "tanggal" : "22 November 2021",
+            "harga" : 50000
+        },
+        {
+            "id_tryout" : 2,
+            "nama" : "Tryout Fisika Kelas 12 SMA",
+            "kuota" : 150,
+            "tanggal" : "23 November 2021",
+            "harga" : 75000
+        },
+        {
+            "id_tryout" : 3,
+            "nama" : "Tryout Kimia Kelas 12 SMA",
+            "kuota" : 100,
+            "tanggal" : "21 November 2021",
+            "harga" : 55000
+        },
+        {
+            "id_tryout" : 4,
+            "nama" : "Tryout Matematika Wajib Kelas 12 SMA",
+            "kuota" : 150,
+            "tanggal" : "22 November 2021",
+            "harga" : 60000
+        },
+        {
+            "id_tryout" : 5,
+            "nama" : "Tryout Matematika Minat Kelas 12 SMA",
+            "kuota" : 125,
+            "tanggal" : "23 November 2021",
+            "harga" : 65000
+        },
+        {
+            "id_tryout" : 6,
+            "nama" : "Tryout Bahasa Indonesia Kelas 12 SMA",
+            "kuota" : 200,
+            "tanggal" : "24 November 2021",
+            "harga" : 70000
+        },
+        {
+            "id_tryout" : 7,
+            "nama" : "Tryout Bahasa Inggris Kelas 12 SMA",
+            "kuota" : 200,
+            "tanggal" : "24 November 2021",
+            "harga" : 80000
+        },
+        {
+            "id_tryout" : 8,
+            "nama" : "Tryout Sejarah Kelas 12 SMA",
+            "kuota" : 125,
+            "tanggal" : "23 November 2021",
+            "harga" : 70000
+        }
+    ]
+}
